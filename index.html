@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tervisedeklaratsioon</title>
+    <style>
+
+        body {
+            background-color: beige;
+            text-align: center;
+        }
+
+        .form {
+            background-color: white;
+            max-width: 1000px;
+            margin: 30px auto;
+            
+        }
+
+        .header {
+            max-width: 100%;
+            height: auto;
+            background-color: #dfedde;
+            padding: 30px 30px;
+        }
+
+        .data {
+            max-width: 100%;
+            height: auto;
+            background-color: lightpink;
+            padding: 10px 20px;
+        }
+
+        .content {
+            max-width: 100%;
+            height: auto;
+            background-color: lightblue;
+            padding: 30px 30px;
+        }
+
+        .container {
+            text-align: left;
+            margin-bottom: 25px;
+            font-size: 18px;
+            font-family: "Open Sans", serif;
+        }
+
+        .container label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+<h1>Tervisedeklaratsioon</h1>
+<form class="form" action="mailto:tonisrahe@gmail.com" method="post" enctype="text/plain">
+
+    <div class="header">
+
+        <p style="text-align: left; font-size: 25px"><strong>Üldine informatsioon</strong></p>
+
+        <div class="container">
+            <label for="eesnimi">Eesnimi</label>
+            <!-- Avatud küsimus -->
+            <input type="text" id="eesnimi" style="width: 400px; height: 25px; font-size: 18px">
+        </div>
+
+        <div class="container">
+            <label for="perenimi">Perenimi</label>
+            <!-- Avatud küsimus -->
+            <input type="text" id="perenimi" style="width: 400px; height: 25px; font-size: 18px">
+        </div>
+
+        <div class="container">
+
+            <label>Sugu</label>
+            <!-- Ühe valikuga küsimus -->
+            <label for="mees">
+                <input type="radio" id="mees" name="sugu" value="mees">Mees
+            </label>
+
+            <label for="naine">
+                <input type="radio" id="naine" name="sugu" value="naine">Naine
+            </label>
+
+            <label for="muu">
+                <input type="radio" id="muu" name="sugu" value="ei soovi öelda">Ei soovi öelda
+            </label>
+
+        </div>
+
+        <div class="container">
+            <label>Sünnipäev</label>
+            <!-- Rippmenüüga küsimus -->
+            <select style="font-size: 18px">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+            </select>
+            <select style="width: 110px; font-size: 18px">
+                <option>Jaanuar</option>
+                <option>Veebruar</option>
+                <option>Märts</option>
+                <option>Aprill</option>
+                <option>Mai</option>
+                <option>Juuni</option>
+                <option>Juuli</option>
+                <option>August</option>
+                <option>September</option>
+                <option>Oktoober</option>
+                <option>November</option>
+                <option>Detsember</option>
+            </select>
+            <select style="width: 70px; font-size: 18px">
+                <option>2014</option>
+                <option>2013</option>
+                <option>2012</option>
+                <option>2011</option>
+                <option>2010</option>
+                <option>2009</option>
+                <option>2008</option>
+                <option>2007</option>
+                <option>2006</option>
+                <option>2005</option>
+                <option>2004</option>
+                <option>2003</option>
+                <option>2002</option>
+                <option>2001</option>
+                <option>2000</option>
+                <option>1999</option>
+                <option>1998</option>
+                <option>1997</option>
+                <option>1996</option>
+                <option>1995</option>
+                <option>1994</option>
+                <option>1993</option>
+                <option>1992</option>
+                <option>1991</option>
+                <option>1990</option>
+                <option>1989</option>
+                <option>1988</option>
+                <option>1987</option>
+                <option>1986</option>
+                <option>1985</option>
+                <option>1984</option>
+                <option>1983</option>
+                <option>1982</option>
+                <option>1981</option>
+                <option>1980</option>
+                <option>1979</option>
+                <option>1978</option>
+                <option>1977</option>
+                <option>1976</option>
+                <option>1975</option>
+                <option>1974</option>
+                <option>1973</option>
+                <option>1972</option>
+                <option>1971</option>
+                <option>1970</option>
+                <option>1969</option>
+            </select>
+        </div>
+
+        <div class="container">
+            <label>E-mail</label>
+            <!-- Avatud küsimus -->
+            <input type="email" id="email" style="width: 400px; height: 25px; font-size: 18px">
+        </div>
+
+        <div class="container">
+            <label>Haridus</label>
+            <!-- Ühe valikuga küsimus -->
+            <select style="width: 170px; font-size: 18px">
+                <option>Põhiharidus</option>
+                <option>Keskharidus</option>
+                <option>Keskeriharidus</option>
+                <option>Kõrgharidus</option>
+                <option>Rakenduskõrgharidus</option>
+            </select>
+        </div>
+
+        <div class="container">
+            <label>Lõpetamise aasta</label>
+            <!-- Rippmenüüga küsimus -->
+            <select style="width: 70px; height: 25px; font-size: 18px">
+                <option>2021</option>
+                <option>2020</option>
+                <option>2019</option>
+                <option>2018</option>
+                <option>2017</option>
+                <option>2016</option>
+                <option>2015</option>
+                <option>2014</option>
+                <option>2013</option>
+                <option>2012</option>
+                <option>2011</option>
+                <option>2010</option>
+                <option>2009</option>
+                <option>2008</option>
+                <option>2007</option>
+                <option>2006</option>
+                <option>2005</option>
+                <option>2004</option>
+                <option>2003</option>
+                <option>2002</option>
+                <option>2001</option>
+                <option>2000</option>
+                <option>1999</option>
+                <option>1998</option>
+                <option>1997</option>
+                <option>1996</option>
+                <option>1995</option>
+                <option>1994</option>
+                <option>1993</option>
+                <option>1992</option>
+                <option>1991</option>
+                <option>1990</option>
+                <option>1989</option>
+                <option>1988</option>
+                <option>1987</option>
+                <option>1986</option>
+                <option>1985</option>
+                <option>1984</option>
+                <option>1983</option>
+                <option>1982</option>
+                <option>1981</option>
+                <option>1980</option>
+                <option>1979</option>
+                <option>1978</option>
+                <option>1977</option>
+                <option>1976</option>
+                <option>1975</option>
+                <option>1974</option>
+                <option>1973</option>
+                <option>1972</option>
+                <option>1971</option>
+                <option>1970</option>
+                <option>1969</option>
+            </select>
+        </div>
+
+        <div class="container">
+            <label>Omandatud eriala</label>
+            <!-- Avatud küsimus -->
+            <input type="text" id="eriala" style="width: 400px; font-size: 18px">
+        </div>
+
+    </div>
+
+    <div class="data">
+
+        <p style="text-align: left; font-size: 25px"><strong>Küsimused</strong></p>
+
+        <div class="container">
+            <label>Kas te tarbite alkoholi?</label>
+            <!-- Ühe valikuga küsimus -->
+            <label for="ei">
+                <input type="radio" id="ei" name="vastus" value="ei">Ei
+            </label>
+
+            <label for="jah">
+                <input type="radio" id="jah" name="vastus" value="jah">Jah
+            </label>
+        </div>
+
+        <div class="container">
+            <label>Kas te suitsetate?</label>
+            <!-- Ühe valikuga küsimus -->
+            <label for="ei suitseta">
+                <input type="radio" id="ei suitseta" name="suits" value="ei">Ei
+            </label>
+
+            <label for="suitsetan">
+                <input type="radio" id="suitsetan" name="suits" value="jah">Jah
+            </label>
+        </div><br>
+
+        <div class="container">
+            <label>Kas teile on tervisekontrolli põhjal varem seatud tööpiiranguid?</label>
+            <!-- Ühe valikuga küsimus -->
+            <label for="pole">
+                <input type="radio" id="pole" name="piirang" value="ei">Ei
+            </label>
+
+            <label for="on">
+                <input type="radio" id="on" name="piirang" value="jah">Jah
+            </label>
+
+            <p>Kui jah, mille tõttu?</p><label for="põhjendus"></label><textarea id="põhjendus" name="piirang" style="width: 400px; font-size: 18px"></textarea>
+        </div><br>
+
+        <div class="container">
+            <label>Kasutan järgmisi meditsiiniseadmeid/abivahendeid:</label>
+            <!-- mitme valikuga küsimus -->
+            <label for="ei kasuta">
+                <input type="checkbox" id="ei kasuta" name="vastus" value="ei kasuta">Ei kasuta
+            </label>
+
+            <label for="kontaktläätsed">
+                <input type="checkbox" id="kontaktläätsed" name="vastus" value="kontaktläätsed">Kontaktläätsed
+            </label>
+
+            <label for="prillid">
+                <input type="checkbox" id="prillid" name="vastus" value="prillid">Prillid
+            </label>
+
+            <label for="kuuldeaparaat">
+                <input type="checkbox" id="kuuldeaparaat" name="vastus" value="kuuldeaparaat">Kuuldeaparaat
+            </label>
+
+            <label for="muu abivahend">
+                <input type="checkbox" id="muu abivahend" name="vastus" value="muu abivahend">Muu abivahend (palun täpsustage, milline)
+                <input type="text" id="tekst" style="width: 400px; font-size: 18px">
+            </label>
+        </div><br>
+
+        <div class="container">
+            <label>Kroonilised haigused, seisundid või sümptomid</label>
+            <input type="text" id="haigused" style="width: 400px; font-size: 18px">
+        </div><br>
+
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <input TYPE="submit" VALUE="Esita" style="font-size: 20px; padding: 15px; background-color: yellow">
+            <input TYPE="reset" VALUE="Taastada vaikimisiväärtused" style="font-size: 20px; padding: 15px; background-color: yellow">
+        </div>
+    </div>
+
+</form>
+</body>
+
+</html>
